@@ -8,6 +8,6 @@ y = df["label"]
 
 model = LogisticRegression()
 model.fit(X, y)
-
+print("help"
 joblib.dump(model, "model.joblib")
 print("Model trained and saved.")
