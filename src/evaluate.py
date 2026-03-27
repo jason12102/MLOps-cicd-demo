@@ -10,7 +10,7 @@ y = df["label"]
 
 model = joblib.load("model.joblib")
 preds = model.predict(X)
-
+print("Happy evaluate")
 acc = accuracy_score(y, preds)
 print(f"Model accuracy: {acc}")
 
